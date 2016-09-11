@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &166478
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 405988}
+  - 114: {fileID: 11475382}
+  - 114: {fileID: 11460512}
+  - 114: {fileID: 11418058}
+  m_Layer: 0
+  m_Name: SCExample_FireArrow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &405988
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 166478}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11418058
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 166478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0353f7398a98945739dec7ba27b63270, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spellTooltipDescription: Fire Arrow fires an arrow to a target enemy<br>that deals
+    damage and burns the enemy.
+--- !u!114 &11460512
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 166478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6c000a3449254c3fa64d7ecefa4ea6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spellPrefab: {fileID: 163998, guid: 2b1674275f5744624bb1c26e59f03958, type: 2}
+  callbackName: FireProjectile
+--- !u!114 &11475382
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 166478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7d9aa2350b4144939958d97098f53ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  callbackReceiver: {fileID: 166478}
+  callbackName: SpawnSpell
+  targetSelf: 0
+  targetAllies: 0
+  targetEnemies: 1
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: targetSelf
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: targetAllies
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: callbackReceiver
+      value: 
+      objectReference: {fileID: 163998, guid: 2b1674275f5744624bb1c26e59f03958, type: 2}
+    - target: {fileID: 0}
+      propertyPath: callbackName
+      value: DoProjectile
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: spellPrefab
+      value: 
+      objectReference: {fileID: 163998, guid: 2b1674275f5744624bb1c26e59f03958, type: 2}
+    - target: {fileID: 0}
+      propertyPath: targetEnemies
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: spellTooltipDescription
+      value: Fire Arrow fires an arrow to a target enemy<br>that deals damage and
+        burns the enemy.
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 166478}
+  m_IsPrefabParent: 1

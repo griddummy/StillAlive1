@@ -1,0 +1,155 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &115082
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 483206}
+  - 114: {fileID: 11422246}
+  - 114: {fileID: 11464116}
+  - 114: {fileID: 11434122}
+  m_Layer: 0
+  m_Name: SCExample_DecayAndDying
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &483206
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 115082}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11422246
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 115082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9277c903675f4b4192098c0f70c968a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  runePrefab: {fileID: 156750, guid: f849592f1336748b8944be38eb3a3d47, type: 2}
+  callbackReceiver: {fileID: 115082}
+  callbackName: SpawnSpell
+  runeRadius: 5
+--- !u!114 &11434122
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 115082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0353f7398a98945739dec7ba27b63270, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spellTooltipDescription: Decay and Dying deals damage to enemies<br>in an area over
+    time.
+--- !u!114 &11464116
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 115082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e4bce368862e4b3aade7e46d38f41f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spellShardPrefab: {fileID: 149212, guid: 9969f502026d84f288b2f184400be4f0, type: 2}
+  delayBetweenShards: 0.05
+  delayBetweenWaves: 0.5
+  numberOfWaves: 7
+  numberOfShards: 14
+  aoeRadius: 1.5
+  startHeight: 0
+  randomiseShardPosition: 1
+  randomiseShardHeight: 0
+  randomiseDelayBetweenShards: 1
+  waveDuration: 3
+  positionModifier: {x: 0, y: 0, z: 0}
+  rotationModifier: {x: 0, y: 0, z: 0}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: callbackReceiver
+      value: 
+      objectReference: {fileID: 115082}
+    - target: {fileID: 0}
+      propertyPath: callbackName
+      value: SpawnSpell
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: runeRadius
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: runePrefab
+      value: 
+      objectReference: {fileID: 156750, guid: f849592f1336748b8944be38eb3a3d47, type: 2}
+    - target: {fileID: 0}
+      propertyPath: spellShardPrefab
+      value: 
+      objectReference: {fileID: 149212, guid: 9969f502026d84f288b2f184400be4f0, type: 2}
+    - target: {fileID: 0}
+      propertyPath: numberOfWaves
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: numberOfShards
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: aoeRadius
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: startHeight
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: randomiseShardPosition
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: waveDuration
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: delayBetweenShards
+      value: .0500000007
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: randomiseDelayBetweenShards
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: delayBetweenWaves
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: spellTooltipDescription
+      value: Decay and Dying deals damage to enemies<br>in an area over time.
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 115082}
+  m_IsPrefabParent: 1

@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &109392
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 448822}
+  - 114: {fileID: 11498242}
+  - 114: {fileID: 11495822}
+  - 114: {fileID: 11457858}
+  m_Layer: 0
+  m_Name: SCExample_LightningStorm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &448822
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 109392}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11457858
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 109392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0353f7398a98945739dec7ba27b63270, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spellTooltipDescription: Calls downs a lightning storm damaging any units within
+    the area.
+--- !u!114 &11495822
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 109392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9bb050c11cba4a2dbbcd1253ca2e62f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lineRendererPrefab: {fileID: 149396, guid: bde70524fb8d946299b937b9667764e3, type: 2}
+  lightRendererPrefab: {fileID: 173630, guid: bbde3291c4608469791da376107c4dc2, type: 2}
+  lightningImpactPrefab: {fileID: 121168, guid: aac00d364c78f474981c683c44f9e346,
+    type: 2}
+  stormCloudPrefab: {fileID: 109734, guid: 418c2ae29ccdf4a8b9cca606472ddc9b, type: 2}
+  startColour: {r: 0.41568625, g: 0.73403645, b: 1, a: 1}
+  endColour: {r: 0.4117647, g: 0.73333335, b: 1, a: 1}
+  numberOfLightningStrikes: 15
+  lightningStrength: 2
+  timeBetweenLightning: 0.5
+  startHeight: 4
+  aoeRadius: 1.5
+--- !u!114 &11498242
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 109392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9277c903675f4b4192098c0f70c968a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  runePrefab: {fileID: 105286, guid: 521d1a61d3c6a42d196277b5b0bc466c, type: 2}
+  callbackReceiver: {fileID: 109392}
+  callbackName: SpawnSpell
+  runeRadius: 5
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 109392}
+  m_IsPrefabParent: 1

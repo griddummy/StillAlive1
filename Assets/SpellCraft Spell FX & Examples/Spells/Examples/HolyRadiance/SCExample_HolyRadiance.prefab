@@ -1,0 +1,112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &117798
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 454898}
+  - 114: {fileID: 11497338}
+  - 114: {fileID: 11446234}
+  - 114: {fileID: 11483314}
+  m_Layer: 0
+  m_Name: SCExample_HolyRadiance
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &454898
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 117798}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11446234
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 117798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 428d07907150f4f91b0fa9e4cb66613f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spellPrefab: {fileID: 154106, guid: e4ab07cbf7f3643d3af37461845f6038, type: 2}
+--- !u!114 &11483314
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 117798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0353f7398a98945739dec7ba27b63270, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spellTooltipDescription: Holy Radiance heals the target ally<br>or deals damage
+    to an enemy.
+--- !u!114 &11497338
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 117798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7d9aa2350b4144939958d97098f53ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  callbackReceiver: {fileID: 117798}
+  callbackName: SpawnSpell
+  targetSelf: 0
+  targetAllies: 1
+  targetEnemies: 1
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: callbackReceiver
+      value: 
+      objectReference: {fileID: 117798}
+    - target: {fileID: 0}
+      propertyPath: callbackName
+      value: SpawnSpell
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: targetSelf
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: spellPrefab
+      value: 
+      objectReference: {fileID: 154106, guid: e4ab07cbf7f3643d3af37461845f6038, type: 2}
+    - target: {fileID: 0}
+      propertyPath: targetAllies
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: targetEnemies
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: spellTooltipDescription
+      value: Holy Radiance heals the target ally<br>or deals damage to an enemy.
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 117798}
+  m_IsPrefabParent: 1

@@ -1,0 +1,124 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &118622
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 413560}
+  - 114: {fileID: 11467568}
+  - 114: {fileID: 11486164}
+  m_Layer: 0
+  m_Name: SCSpell_LightningChain
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &413560
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 118622}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11467568
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 118622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 126255da2596a4ef8911e1867529db00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lineRendererPrefab: {fileID: 149396, guid: bde70524fb8d946299b937b9667764e3, type: 2}
+  lightRendererPrefab: {fileID: 173630, guid: bbde3291c4608469791da376107c4dc2, type: 2}
+  numberOfBounces: 6
+  timeBetweenBounces: 0.15
+  lightningStrength: 4
+  startColour: {r: 0.41911763, g: 0.51926976, b: 1, a: 1}
+  endColour: {r: 0.41568628, g: 0.5176471, b: 1, a: 1}
+--- !u!114 &11486164
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 118622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3201db1dc66b34c4fa78016ca065a04c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spellDuration: 5
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: spellDuration
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: lineRendererPrefab
+      value: 
+      objectReference: {fileID: 149396, guid: bde70524fb8d946299b937b9667764e3, type: 2}
+    - target: {fileID: 0}
+      propertyPath: lightRendererPrefab
+      value: 
+      objectReference: {fileID: 173630, guid: bbde3291c4608469791da376107c4dc2, type: 2}
+    - target: {fileID: 0}
+      propertyPath: startColour.r
+      value: .41911763
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: startColour.g
+      value: .519269764
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: startColour.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: startColour.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: endColour.r
+      value: .41568628
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: endColour.g
+      value: .517647088
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: endColour.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: endColour.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: numberOfBounces
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: timeBetweenBounces
+      value: .150000006
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 118622}
+  m_IsPrefabParent: 1

@@ -1,0 +1,118 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &163846
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 413182}
+  - 114: {fileID: 11415760}
+  - 114: {fileID: 11405494}
+  m_Layer: 0
+  m_Name: SCEffects_Incinerate
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &413182
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 163846}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11405494
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 163846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e4bce368862e4b3aade7e46d38f41f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spellShardPrefab: {fileID: 154866, guid: 42732bb6b55d14e918f64fd40b25502f, type: 2}
+  delayBetweenShards: 0
+  delayBetweenWaves: 0
+  numberOfWaves: 1
+  numberOfShards: 1
+  aoeRadius: 1.5
+  startHeight: 0
+  randomiseShardPosition: 0
+  randomiseShardHeight: 0
+  randomiseDelayBetweenShards: 0
+  waveDuration: 10
+  positionModifier: {x: 0, y: 0, z: 0}
+  rotationModifier: {x: 0, y: 0, z: 0}
+--- !u!114 &11415760
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 163846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9277c903675f4b4192098c0f70c968a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  runePrefab: {fileID: 105286, guid: 521d1a61d3c6a42d196277b5b0bc466c, type: 2}
+  callbackReceiver: {fileID: 163846}
+  callbackName: SpawnSpell
+  runeRadius: 5
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: callbackReceiver
+      value: 
+      objectReference: {fileID: 163846}
+    - target: {fileID: 0}
+      propertyPath: callbackName
+      value: SpawnSpell
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: runeRadius
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: aoeRadius
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: spellShardPrefab
+      value: 
+      objectReference: {fileID: 154866, guid: 42732bb6b55d14e918f64fd40b25502f, type: 2}
+    - target: {fileID: 0}
+      propertyPath: delayBetweenWaves
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: startHeight
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: waveDuration
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: runePrefab
+      value: 
+      objectReference: {fileID: 105286, guid: 521d1a61d3c6a42d196277b5b0bc466c, type: 2}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 163846}
+  m_IsPrefabParent: 1

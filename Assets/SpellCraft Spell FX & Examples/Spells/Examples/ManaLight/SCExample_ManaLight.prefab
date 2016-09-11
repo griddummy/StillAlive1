@@ -1,0 +1,158 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &140866
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 434636}
+  - 114: {fileID: 11458940}
+  - 114: {fileID: 11466340}
+  - 114: {fileID: 11429864}
+  m_Layer: 0
+  m_Name: SCExample_ManaLight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &434636
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 140866}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11429864
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 140866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0353f7398a98945739dec7ba27b63270, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spellTooltipDescription: Mana Light deals damage to a target enemy<br>and drains
+    the same amount in mana.
+--- !u!114 &11458940
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 140866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7d9aa2350b4144939958d97098f53ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  callbackReceiver: {fileID: 140866}
+  callbackName: SpawnSpell
+  targetSelf: 0
+  targetAllies: 0
+  targetEnemies: 1
+--- !u!114 &11466340
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 140866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45aa8c601e24d4c6b8f2f32a57468683, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lineRendererPrefab: {fileID: 149396, guid: bde70524fb8d946299b937b9667764e3, type: 2}
+  lightRendererPrefab: {fileID: 173630, guid: bbde3291c4608469791da376107c4dc2, type: 2}
+  glowParticlePrefab: {fileID: 154278, guid: 364b985de6ffc4e5588e9e7671be9e06, type: 2}
+  lightningStrength: 10
+  startColour: {r: 0.30588236, g: 1, b: 0.7411765, a: 1}
+  endColour: {r: 0.30588236, g: 1, b: 0.7411765, a: 1}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: lineRendererPrefab
+      value: 
+      objectReference: {fileID: 149396, guid: bde70524fb8d946299b937b9667764e3, type: 2}
+    - target: {fileID: 0}
+      propertyPath: lightRendererPrefab
+      value: 
+      objectReference: {fileID: 173630, guid: bbde3291c4608469791da376107c4dc2, type: 2}
+    - target: {fileID: 0}
+      propertyPath: startColour.r
+      value: 0.30588236
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: startColour.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: startColour.b
+      value: 0.7411765
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: startColour.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: endColour.r
+      value: 0.30588236
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: endColour.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: endColour.b
+      value: 0.7411765
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: endColour.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: glowParticlePrefab
+      value: 
+      objectReference: {fileID: 154278, guid: 364b985de6ffc4e5588e9e7671be9e06, type: 2}
+    - target: {fileID: 0}
+      propertyPath: lightningStrength
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: spellTooltipDescription
+      value: Mana Light deals damage to a target enemy<br>and drains the same amount
+        in mana.
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: targetSelf
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: targetAllies
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: callbackReceiver
+      value: 
+      objectReference: {fileID: 140866}
+    - target: {fileID: 0}
+      propertyPath: callbackName
+      value: SpawnSpell
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 140866}
+  m_IsPrefabParent: 1
